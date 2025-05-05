@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Intliri Academy</title>
+<!--
+
+DIGITAL TREND
+
+https://templatemo.com/tm-538-digital-trend
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+
+     <!-- FontAwesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+
+     <style>
+
+/* Style for the dropdown */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Initially hide dropdown */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    background: #ffffff; /* Light theme */
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Style dropdown items */
+.dropdown-menu .dropdown-item {
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect on submenu items */
+.dropdown-menu .dropdown-item:hover {
+    background: #f8f9fa;
+    color: #007bff;
+}
+
+
+
+          /* Custom Navigation Buttons */
+          .custom-carousel-btn {
+              width: 60px;
+              height: 60px;
+              background-color: rgba(0, 78, 100, 0.8); /* Dark blue from your color palette */
+              border-radius: 50%;
+              border: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all 0.3s ease-in-out;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          }
+          
+          .custom-carousel-btn:hover {
+              background-color: #00A5CF; /* Lighter blue on hover */
+              box-shadow: 0px 6px 15px rgba(0, 165, 207, 0.4);
+          }
+          
+          /* Adjust left and right button positions */
+          .carousel-control-prev {
+              left: -30px;
+          }
+          
+          .carousel-control-next {
+              right: -30px;
+          }
+          
+          /* Custom icons */
+          .carousel-control-prev-icon,
+          .carousel-control-next-icon {
+              background-image: none;
+              width: 30px;
+              height: 30px;
+          }
+          
+          .carousel-control-prev-icon::before,
+          .carousel-control-next-icon::before {
+              content: '‹'; /* Left arrow */
+              font-size: 36px;
+              color: white;
+              font-weight: bold;
+          }
+          
+          .carousel-control-next-icon::before {
+              content: '›'; /* Right arrow */
+          }
+
+          .custom-carousel-btn {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(20, 124, 180, 0.8); /* Dark blue from your color palette */
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Left button positioning */
+.carousel-control-prev {
+    left: 15px;
+}
+
+/* Right button positioning */
+.carousel-control-next {
+    right: 15px;
+}
+
+/* Hover Effect */
+.custom-carousel-btn:hover {
+    background-color: #085366; /* Lighter blue on hover */
+    box-shadow: 0px 6px 15px rgba(0, 165, 207, 0.4);
+}
+
+/* Custom Icons */
+.carousel-icon {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+ /* Custom Styling */
+ .nav-pills .nav-link {
+        background: #00A5CF;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+    
+    .nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+        background: #004E64;
+    }
+
+    .custom-card {
+        background: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 20px;
+        animation: fadeIn 0.5s ease-in-out;
+        margin-top: 20px;
+    }
+
+    .icon {
+        font-size: 50px;
+        color: #00A5CF;
+        margin-bottom: 15px;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+     /* Custom Styling */
+     .nav-pills .nav-link {
+        background: #00A5CF;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 15px;
+    }
+    
+    .nav-pills .nav-link i {
+        font-size: 18px;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+        background: #004E64;
+        transform: scale(1.05);
+    }
+
+    .custom-card {
+        background: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 20px;
+        animation: fadeIn 0.5s ease-in-out;
+        margin-top: 20px;
+    }
+
+    .icon {
+        font-size: 50px;
+        color: #00A5CF;
+        margin-bottom: 15px;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+
+
+    /* Join Now Button Styling */
+.join-now-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #FF3CAC, #784BA0, #2B86C5);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Effect */
+.join-now-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(255, 60, 172, 0.5);
+}
+
+/* Button Click Animation */
+.join-now-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 4px 10px rgba(255, 60, 172, 0.3);
+}
+
+/* Button Glow Effect */
+@keyframes glow {
+    0% { box-shadow: 0px 4px 15px rgba(255, 60, 172, 0.2); }
+    50% { box-shadow: 0px 6px 25px rgba(255, 60, 172, 0.6); }
+    100% { box-shadow: 0px 4px 15px rgba(255, 60, 172, 0.2); }
+}
+
+.join-now-btn:hover {
+    animation: glow 1.5s infinite alternate;
+}
+
+
+
+
+
+
+
+
+
+<!--Testionomilas-->
+
+/* Section Styling */
+#testimonials {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Testimonial Image */
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid #FF3CAC;
+}
+
+/* Text & Name */
+.testimonial-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.testimonial-role {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #FF3CAC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+
+     .who-we-are {
+         background: linear-gradient(to right, #f9f9f9, #ffffff);
+         padding: 80px 0;
+     }
+ 
+     .info-card {
+         background: #ffffff;
+         padding: 20px;
+         border-radius: 10px;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         text-align: center;
+     }
+ 
+     .info-card:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+     }
+ 
+     .icon {
+         font-size: 40px;
+         color: #ff6b6b;
+         margin-bottom: 15px;
+     }
+ 
+     .custom-btn {
+         padding: 12px 25px;
+         font-size: 18px;
+         border-radius: 30px;
+         background: linear-gradient(135deg, #ff6b6b, #ff4757);
+         border: none;
+         transition: all 0.3s ease-in-out;
+     }
+ 
+     .custom-btn:hover {
+         background: linear-gradient(135deg, #ff4757, #ff6b6b);
+         transform: scale(1.05);
+     }
+
+
+
+     .who-we-are {
+    position: relative;
+    background: linear-gradient(to bottom left, #82d9ef 40%, rgb(255, 255, 255) 50%);
+    color: black; /* Adjust text color for visibility */
+    padding: 80px 0;
+}
+/* .about {
+    background: linear-gradient(to top left, #ffffff 50%, pink 20%, #133f4a 300%);
+} */
+
+
+ 
+
+/* Instructor Section Styling */
+.instructor-section {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructor-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.instructor-card:hover {
+    transform: scale(1.02);
+}
+
+.instructor-image img {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fcfdfe;
+    transition: transform 0.3s ease-in-out;
+}
+
+.instructor-image img:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+.instructor-info {
+    flex: 1;
+    margin-left: 84px;
+    text-align: left;
+}
+
+.instructor-info h2 {
+    font-size: 28px;
+    color: #0a3a70;
+    margin-bottom: 10px;
+}
+
+.instructor-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+}
+
+.instructor-info .highlight {
+    font-weight: bold;
+    color: #ff5733;
+    margin-bottom: 5px;
+}
+
+.instructor-info p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Social Media Icons */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 22px;
+    color: #555;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+.social-links .linkedin:hover { color: #0077b5; }
+.social-links .youtube:hover { color: #FF0000; }
+.social-links .instagram:hover { color: #E1306C; }
+.social-links .twitter:hover { color: #1DA1F2; }
+.social-links .website:hover { color: #ff9800; }
+.social-links .email:hover { color: #d44638; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .instructor-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .instructor-info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+/* Footer Styling */
+.footer {
+    background:rgb(26, 23, 23);
+    color: #c5bdbd;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Footer Top Section */
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left;
+}
+
+.footer-brand h2 {
+    font-size: 22px;
+    color: #ffdae9;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-contact p,
+.footer-program p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color:rgb(177, 174, 174);
+    font-weight: bold;
+}
+
+/* Footer Links */
+.footer-links {
+    margin-top: 30px;
+}
+
+.footer-links a {
+    color: #c2b9f5;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 8px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff6600;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+          </style>
+          
+          <style>.testimonials {
+               background: linear-gradient(to bottom right, #10687e 10%, white 50%);
+               color: black;
+               padding: 80px 0;
+               text-align: center;
+           }
+           
+           .testimonial-box {
+               background: #fff;
+               padding: 20px;
+               border-radius: 10px;
+               box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+               margin-bottom: 20px;
+               text-align: center;
+               max-width: 80%;
+               margin: auto;
+           }
+           
+           .testimonial-box img {
+               width: 80px;
+               height: 80px;
+               border-radius: 50%;
+               object-fit: cover;
+               margin-bottom: 10px;
+           }
+           
+           .testimonial-box p {
+               font-size: 16px;
+               font-style: italic;
+           }
+           
+           .testimonial-box h5 {
+               margin-top: 10px;
+               font-weight: bold;
+           }
+           </style>
+</head>
+<body>
+
+  <!-- MENU BAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo1.png" alt="Intliri Academy" height="60" style="background-color: white; border-radius: 10px;"> Intliri Academy
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link smoothScroll">Home</a>
+                </li>
+
+                <!-- Dropdown with Hover Effect -->
+                <li class="nav-item dropdown">
+                    <a href="#courses" class="nav-link smoothScroll" class="nav-link dropdown-toggle" id="coursesDropdown" role="button">
+                        Our Courses
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+                        <a class="dropdown-item" href="https://nquantastic1.wixsite.com/intliri/wealthaccelerator">10X Wealth Accelerator Program (10XWAP)</a>
+                        <a class="dropdown-item" href="https://nquantastic1.wixsite.com/intliri/smartportfoliobuilder">10X Smart Portfolio Builder (10XSPB)</a>
+                        <a class="dropdown-item" href="https://nquantastic1.wixsite.com/intliri">10X Smart Trader Program (10XSTP)</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link contact">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+     <!-- HERO -->
+     <section class="hero hero-bg d-flex justify-content-center align-items-center">
+               <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                              <div class="hero-text">
+
+                                   <h1 class="text-white" data-aos="fade-up">Become a Profitable Trader</h1>
+
+                                   <h4 style="color: rgb(40, 2, 15);">
+                                        
+                                        Program designed to make you a Profitable Trader.
+                                        Else, we return your Trading Losses, SMIPLE!</h4>
+
+                                   <a href="#courses"  id="courses" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Join Now</a>
+
+                                   <strong class="d-block py-3 pl-5 text-white" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-phone mr-2"></i> +91 84838 29386</strong>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                          <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+
+                            <img src="images/working-girl.png" class="img-fluid" alt="working girl">
+                          </div>
+                        </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+
+     <section id="courses" class="py-5" style="background-color:white" id="courses">
+          <div class="container text-center">
+              <h2 class="mb-4" style="color: #004E64;">Explore Our Courses</h2>
+      
+              <div id="courseCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                  <div class="carousel-inner">
+                      <!-- Course 1 -->
+                      <div class="carousel-item active">
+                          <div class="card mx-auto shadow-lg p-4" style="max-width: 700px; background-color: #01181b; border-radius: 15px;">
+                              <img src="images/Accelator.jpg" alt="10X Wealth Accelerator" class="img-fluid" style="border-radius: 20px;
+                              height: 289px;
+                              width: 630px;">
+                              <h3 class="mt-3" style="color: #96b292;">10X Wealth Accelerator Program
+                            </h3>
+                              <p style="color: white;">Smart. Risk Less. Earn More.
+                            </p>
+                            <p>A beginner-friendly, no-nonsense trading program designed to transform your trading game with simple yet powerful trading strategies, robust risk management framework and step by step guide to grow your wealth like a pro.
+                            </p>
+                              <a href="https://nquantastic1.wixsite.com/intliri/wealthaccelerator" class="btn" style="background-color: #F652A0; color: white;">Start Learning</a>
+                          </div>
+                      </div>
+      
+                      <!-- Course 2 -->
+                      <div class="carousel-item">
+                          <div class="card mx-auto shadow-lg p-4" style="max-width: 700px; background-color: #011411; border-radius: 15px;">
+                              <img src="images/portfolio.jpg" alt="10X Smart Portfolio Builder" class="img-fluid"  style="border-radius: 20px;
+                              height: 289px;
+                              width: 630px;">
+                              <h3 class="mt-3" style="color: #24650c;">10X Smart Portfolio Builder
+                            </h3>
+                              <p style="color: white;">Zero Risk. Infinite Returns.</p>
+                              <p>Learn how to build a zero-risk stocks portfolio by identifying multibagger stocks at the right time and right price. A step-by-step program to help you pick winning stocks, eliminate risk, and build long-term wealth like the pros.
+
+                              </p>
+                              <a href="https://nquantastic1.wixsite.com/intliri/smartportfoliobuilder" class="btn" style="background-color: #F652A0; color: white;">Start Learning</a>
+                          </div>
+                      </div>
+      
+                      <!-- Course 3 -->
+                      <div class="carousel-item">
+                          <div class="card mx-auto shadow-lg p-4" style="max-width: 700px; background-color: #011411; border-radius: 15px;">
+                              <img src="images/smart trader.jpg" alt="10X Smart Trader Program" class="img-fluid" style="border-radius: 20px;
+                              height: 289px;
+                              width: 630px;">
+                              <h3 class="mt-3" style="color: #137457;">10X Smart Trader Program</h3>
+                              <p style="color: white;"> Master Institutional Trading Strategies and Smart Money Concepts
+                            </p>
+                            <p>Learn how to trade like big institutions and avoid losses. A comprehensive trading program specially designed to transform you into a profitable trader.</p>
+                              <a href="https://nquantastic1.wixsite.com/intliri" class="btn" style="background-color: #F652A0; color: white;">Start Learning</a>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <!-- Carousel Controls -->
+         <!-- Custom Carousel Controls -->
+<button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev">
+     <span class="carousel-icon">‹</span>
+ </button>
+ 
+ <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#courseCarousel" data-bs-slide="next">
+     <span class="carousel-icon">›</span>
+ </button>
+              </div>
+          </div>
+      </section>
+      
+
+     
+<!--courses overview-->
+
+
+
+
+<!--Why Choose Us Start-->
+
+
+<section id="why-choose-us" class="py-5" style="background-color: #f8f9fa;">
+     <div class="container text-center">
+         <h2 class="mb-4" style="color: #004E64; font-weight: bold;">Why Choose Us?</h2>
+         
+         <!-- Tabs with Icons -->
+         <ul class="nav nav-pills justify-content-center mb-4" id="chooseUsTabs">
+             <li class="nav-item">
+                 <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#expert-led">
+                     <i class="fas fa-chalkboard-teacher"></i> Expert-Led
+                 </button>
+             </li>
+             <li class="nav-item">
+                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#comprehensive">
+                     <i class="fas fa-book-open"></i> Comprehensive
+                 </button>
+             </li>
+             <li class="nav-item">
+                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#financial-independence">
+                     <i class="fas fa-chart-line"></i> Financial Freedom
+                 </button>
+             </li>
+             <li class="nav-item">
+                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#upcoming">
+                     <i class="fas fa-hourglass-half"></i> Upcoming Courses
+                 </button>
+             </li>
+             <li class="nav-item">
+                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#community">
+                     <i class="fas fa-users"></i> Trusted Community
+                 </button>
+             </li>
+         </ul>
+ 
+         <!-- Tab Content -->
+         <div class="tab-content">
+             <!-- Expert-Led -->
+             <div class="tab-pane fade show active" id="expert-led">
+                 <div class="card custom-card">
+                     <div class="card-body">
+                         <i class="fas fa-chalkboard-teacher icon"></i>
+                         <h5 class="card-title">Expert-Led Education</h5>
+                         <p class="card-text">Learn from top industry professionals with real-world stock market experience.</p>
+                     </div>
+                 </div>
+             </div>
+ 
+             <!-- Comprehensive Courses -->
+             <div class="tab-pane fade" id="comprehensive">
+                 <div class="card custom-card">
+                     <div class="card-body">
+                         <i class="fas fa-book-open icon"></i>
+                         <h5 class="card-title">Comprehensive Curriculum</h5>
+                         <p class="card-text">Step-by-step courses from beginner to advanced levels for financial success.</p>
+                     </div>
+                 </div>
+             </div>
+ 
+             <!-- Financial Independence -->
+             <div class="tab-pane fade" id="financial-independence">
+                 <div class="card custom-card">
+                     <div class="card-body">
+                         <i class="fas fa-chart-line icon"></i>
+                         <h5 class="card-title">Financial Independence</h5>
+                         <p class="card-text">Master investing & trading skills to secure your financial future.</p>
+                     </div>
+                 </div>
+             </div>
+ 
+             <!-- Upcoming Courses -->
+             <div class="tab-pane fade" id="upcoming">
+                 <div class="card custom-card">
+                     <div class="card-body">
+                         <i class="fas fa-hourglass-half icon"></i>
+                         <h5 class="card-title">Upcoming Courses</h5>
+                         <p class="card-text">Stay ahead with our new and upcoming courses, designed for future financial trends.</p>
+                     </div>
+                 </div>
+             </div>
+ 
+             <!-- Trusted Community -->
+             <div class="tab-pane fade" id="community">
+                 <div class="card custom-card">
+                     <div class="card-body">
+                         <i class="fas fa-users icon"></i>
+                         <h5 class="card-title">Trusted by Thousands</h5>
+                         <p class="card-text">Join a growing community of learners who trust us for financial education.</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ 
+
+
+ <div class="text-center mt-4">
+     <a href="#courses" class="join-now-btn">Join Now</a>
+ </div>
+
+
+ 
+
+<!--Why Choose Us end-->
+
+
+
+
+<!-- WHO IS INTLIRI FOR? -->
+<section class="who-we-are section-padding text-center" id="who-is-intliri">
+     <div class="container">
+         <h2 class="mb-4" data-aos="fade-up">Who is <strong style="color: rgb(182, 12, 108);">INTLIRI</strong> For?</h2>
+         <p class="mb-5" data-aos="fade-up" data-aos-delay="100">Whether you're new to investing or looking to master financial strategies, INTLIRI is for you! 🚀</p>
+         
+         <div class="row justify-content-center">
+             <!-- Card 1 -->
+             <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                 <div class="info-card">
+                     <i class="fas fa-user-graduate icon"></i>
+                     <h4>Beginners</h4>
+                     <p>Learn investing & trading from scratch with step-by-step guidance.</p>
+                 </div>
+             </div>
+ 
+             <!-- Card 2 -->
+             <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                 <div class="info-card">
+                     <i class="fas fa-chart-line icon"></i>
+                     <h4>Traders & Investors</h4>
+                     <p>Master technical analysis & market strategies to maximize profits.</p>
+                 </div>
+             </div>
+ 
+             <!-- Card 3 -->
+             <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                 <div class="info-card">
+                     <i class="fas fa-piggy-bank icon"></i>
+                     <h4>Finance Enthusiasts</h4>
+                     <p>Gain deep insights into wealth creation & financial planning.</p>
+                 </div>
+             </div>
+ 
+             <!-- Card 4 -->
+             <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="500">
+                 <div class="info-card">
+                     <i class="fas fa-briefcase icon"></i>
+                     <h4>Students & Professionals</h4>
+                     <p>Develop real-world financial skills to secure your future.</p>
+                 </div>
+             </div>
+ 
+             <!-- Card 5 -->
+             <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
+                 <div class="info-card">
+                     <i class="fas fa-business-time icon"></i>
+                     <h4>Entrepreneurs</h4>
+                     <p>Build wealth & grow investments for long-term success.</p>
+                 </div>
+             </div>
+         </div>
+ 
+         <div class="mt-5">
+             <a href="#courses" class="btn btn-primary btn-lg custom-btn" data-aos="flip-up">Start Learning Today 🚀</a>
+         </div>
+     </div>
+ </section>
+ 
+
+
+
+
+
+<!-- INSTRUCTOR SECTION -->
+<!-- INSTRUCTOR SECTION -->
+<section class="instructor-section" id="instructor">
+    <div class="container">
+        <div class="instructor-card">
+            <div class="instructor-image">
+                <img src="images/Instructor.jpg" alt="Sachin Naik">
+            </div>
+            <div class="instructor-info">
+                <h2>Meet Your Instructor</h2>
+                <h3>Sachin Naik</h3>
+                <p class="highlight">IIM Lucknow | NISM Certified Research Analyst</p>
+                <p>14+ Years of Experience | Professional Statistician</p>
+                <p>Full-Time Trader | Serial Entrepreneur & Blogger</p>
+
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sachinnaik2882/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@intliriacademy" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/sachinnaik2882/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2FSachinRNaik" target="_blank" class="twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://sachinnaikblog.com" target="_blank" class="website"><i class="fas fa-globe"></i></a>
+                    <a href="sachinnaik2882@gmail.com" class="email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+ <!-- TESTIMONIALS SECTION -->
+<section class="testimonials section-padding" id="testimonials">
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-8 mx-auto text-center">
+                 <h2 class="mb-4" data-aos="fade-up">What Our Students Say</h2>
+                 <p class="mb-5" data-aos="fade-up">Hear from those who have unlocked financial freedom with our expert guidance.</p>
+             </div>
+         </div>
+ 
+         <!-- Swiper Container -->
+         <div class="swiper testimonial-slider">
+             <div class="swiper-wrapper">
+                 <!-- Testimonial 1 -->
+                 <div class="swiper-slide">
+                     <div class="testimonial-box">
+                         <img src="images/m1.jpg" alt="Student 1" ">
+                         <p style="text-align: justify;">"
+                           " 
+                            If you are a fresher then go for the course at first place and if have some experience then
+                            TRADING PSYCHOLOGY & Risk management session will help you a lot and for Pro Traders,
+                            this will change the way you trade. Immense learning. Overall cross learning through discord
+                            community, D&S Zone alerts helped me a lot and Trading psychology session will drastically
+                            change you P&L. I highly recommend this course to anyone who wants to learn trading. Trust me, it's
+                            worth it!"
+                            
+                            "</p>
+                         <h5>- MILIND</h5>
+                         <p>Police Officer</p>
+                     </div>
+                 </div>
+ 
+                 <!-- Testimonial 2 -->
+                 <div class="swiper-slide">
+                     <div class="testimonial-box">
+                         <img src="images/Sakshi.jpg" alt="Student 2">
+                         <p style="text-align: justify;">"Let me share my experience of this amazing program. It taught me how to be consistent in
+                            the stock market by keeping my emotions in check and relying on the smart money concepts I
+                            have gained through the course.
+                            
+                            
+                            
+                            The techniques were explained so conceptually that I didn't have to
+                            memorize anything. Now, when I apply those techniques, I feel confident and trust my
+                            trades. I highly recommend this course to anyone who wants to learn trading. Trust me, it's
+                            worth it!"</p>
+                         <h5>- SAKSHI</h5>
+                         <p>Working Professional</p>
+                     </div>
+                 </div>
+ 
+                 <!-- Testimonial 3 -->
+                 <div class="swiper-slide">
+                     <div class="testimonial-box">
+                         <img src="images/shrawani.jpg" alt="Student 3">
+                         <p style="text-align: justify;">"Hey guys! Let me share a story with you all. In one interview, Bill Gates was asked the secret
+                            behind his success and wealth. He gave a blank signed check to the reporter and told him to
+                            write any amount he wanted. The reporter hesitated, but Gates told him that he never misses
+                            an opportunity like the one the reporter had just missed. And that's the reason for his
+                            success!
+                            
+                            
+                            
+                            So guys, the 10XSTP Program is that opportunity for you. Don't hesitate or have any doubts
+                            in your mind. I'm saying this a"</p>
+                         <h5>- SHRAWANI</h5>
+                         <p>Student</p>
+                     </div>
+                 </div>
+ 
+                 <!-- Testimonial 4 -->
+                 <div class="swiper-slide">
+                     <div class="testimonial-box">
+                         <img src="images/harshad.jpg" alt="Student 4">
+                         <p style="text-align: justify;">"Hi, this program is just awesome! The logic given to explain how stocks work was very
+                            informative and helped me understand the importance of discipline in trading. I loved the way
+                            you taught and patiently answered all our queries.
+                            
+                            
+                            
+                            The journaling and stock selection techniques taught were simple but very effective. I'm really
+                            glad to have such a great mentor and I'm looking forward to learning many more nuances of
+                            trading from you. Thank you for these amazing sessions!!"</p>
+                         <h5>- HARSHAD</h5>
+                         <p>Working Proffession</p>
+                     </div>
+                 </div>
+ 
+                 <!-- Testimonial 5 -->
+                 <div class="swiper-slide">
+                     <div class="testimonial-box">
+                         <img src="images/pratiksha.jpg" alt="Student 5">
+                         <p style="text-align: justify;">"Forget about the course and instructor, lot of people have said a lot of good things about it -
+                            Sachin sir and the program is simply amazing.
+                            
+                            
+                            
+                            What is an absolute game changer is the wealth of knowledge and resources that you get on
+                            the Discord server. That alone is enough to make anyone a profitable trader. The team puts in
+                            huge amount of efforts to get all the right information to us. The watchlists and catalyst itself
+                            is worth lakhs. Kudus to the program team, thanks you for changing my life!"</p>
+                         <h5>- PRATIKSHA</h5>
+                         <p>Professional Skills Instructor</p>
+                     </div>
+                 </div>
+ 
+                 <!-- Testimonial 6 -->
+                 <div class="swiper-slide">
+                     <div class="testimonial-box">
+                         <img src="images/Sujit.jpg" alt="Student 6">
+                         <p style="text-align: justify;">"Hey, I was a student in last batch and let me tell you, this coaching program is totally worth it!
+                            No need to think twice, just go ahead and enrol. I guarantee that you will learn more than you
+                            expect. Even if you have limited funds, it's the best platform to gain knowledge about trading.
+                            
+                            
+                            
+                            The instructor explains everything in great detail, market basics to really advanced smart
+                            money concepts. Plus, the risk management and trading psychology lessons are gold. He
+                            even guides you on how to keep your emotions in check during live trading. Don't miss out on
+                            this opportunity, guys!"</p>
+                         <h5>- SUJIT</h5>
+                         <p>
+                            Small Business Owner
+                         </p>
+                     </div>
+                 </div>
+ 
+              
+ 
+               
+ 
+                 
+               
+             </div>
+ 
+             <!-- Swiper Navigation -->
+             <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div>
+ 
+             <!-- Swiper Pagination -->
+             <div class="swiper-pagination"></div>
+         </div>
+     </div>
+ </section>
+ 
+
+     
+
+
+
+
+ 
+<!--  Testinomils End -->
+
+
+
+
+
+
+
+     <!-- PROJECT -->
+  
+     <!-- PROJECT -->
+     <section class="project section-padding" id="project">
+        <div class="container-fluid">
+             <div class="row">
+
+                  <div class="col-lg-12 col-12">
+
+                      <h2 class="mb-5 text-center" data-aos="fade-up">
+                          What You 
+                          <strong>Learn</strong>
+                      </h2>
+
+                       <div class="owl-carousel owl-theme" id="project-slide">
+                            <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                                 <img src="https://wallstreetmojocms.recurpro.in/uploads/Investment_Strategies_756712290a.jpg" class="img-fluid" alt="project image">
+
+                                 <div class="project-info">
+                                      <small> Learn proven investment techniques to maximize wealth.</small>
+
+                                      <h3>
+                                           <a href="  ">
+                                                <span> Comprehensive Investment Strategies</span>
+                                           </a>
+                                      </h3>
+                                 </div>
+                            </div>
+
+                            <div class="item project-wrapper" data-aos="fade-up">
+                                 <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExEVFRMXFxUXGBcXGBkeFxcZFx0ZFhgYFRgZHSggHR0lHhUXITEhJikrLi4uGB8zODMsNygtLisBCgoKDg0OGxAQGy0mICYtLTU1LS8tLS0vLS8tLy0tLy03LS0vLS0tKy0tLS8tLS0tLS0tLS8tLS0tLS0tLS0tLf/AABEIAKgBLAMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUCAwYBB//EAEMQAAEDAgQDBQUEBwcEAwAAAAEAAgMEEQUSITEGE0EiUWFxgRQykaGxI8HR8BUzQlJyguEkNFNikrLxBxZDc2Oi0v/EABsBAQACAwEBAAAAAAAAAAAAAAADBAECBQYH/8QAPxEAAgECBAMECAQEBQQDAAAAAAECAxEEEiExBUFRE2FxkRQigaGxwdHwBiMy4RU0UvEzQnKCsjVzwtJDRGL/2gAMAwEAAhEDEQA/AOFXojzYQBAEAQBAEAugCAIAgPQL7DbX0WDNjxZMBAEAQC6AXQBAEAQBALoD0A66bb+HmsGbM8BWTAQBACUAQBAEAQBAEAQBAEAQBAEAQBAEAQHhQI+5VdHUc6mbHR0z6ExRc98jYtL3z7nNo3KRoRf1tx4uGVtyea+h25KWZJJZeZwDOHaRxrKp07mUMU5jj5QDnvJOgYTplAcLE3uFd7aayxS9ZopdhTblNv1UzfTcCMdWCH2gmCSmNTFKG6ltwAHNPdfW3hteww8S1DNbW9rCOEi52vpa6JPDuFYa+LECHySsjjYWyGMZmtLbl8Ydaz8+cWPRrVrVnVThyub0qdK0+aRshqIYMCLo5JWOmkex5DGEveY3AxuJ2jsPeGvxKw1KWI1W335mYuMcPpzIzeBIM7aR1U4V7ouYG5PsQbF3LLt72B18L26Lb0mVs9vVv7TT0SH6L+sbIWE4Xhzb5ScQtewNjmeL2Oht3FYb/Om//wAm6X5UF3mGLcOtlrcQmqZ3NgpywyPYwZ3ukAytY0dkHx8u8kZhVcacIxWrNalFSqSlN6I5/irAWU3JkilMlPUML43OFni1szXjvGYa+PgpqNVzumtUV69FQs4vRnQ4LiJpcG57I4nSe1ln2jA4ZSwEj5KCpDPXyt8ixTnkw+ZLmWNPhbP0jhs9OG0/tcDpSxrQWseInOdkadACCB6ErRzfZTjLWz+ZIqa7WEo6XXyOdo+FBURRyxyOMjqz2aZthZgcSRIAOmWx7rnwU7r5G0+l0QLDqaunrezJNBwVFJJVuEk76amk5Q5UeeaV+gcGtAtYHrbb4rWWIklFWV35GY4WLcnrZeZsj4BZ7Y+nfO9sXspqmSFlnBuZrcsjDqCLuuN9Btewx6U+zzJa3sZWEWdxb0tcj4RwrTVBqZYpaiWnhMYa2KMGokzgZnZHWs0HN0uQD3a7TrzjlTSTfXY1hh6cnJptpdNzfguFiN+JMhqC5jKOU3dFlc4WuWPbIMzCLWuPPy1nPNkclz6m1Omo51F8uhLraiKHAYhFJI3nF4dZjPtX3Ie2Q7hosQCNbNatUpSxDutjduMcOrczLiPhsz4jMJqi0UNMyaWQRtBDGj3WsboTodfA+ASlWy0llWrdhVo56rzPRI52owSkdNTiCsLoZs2a8ZdPCW/svijuSXbNsPlqp1UnleaOq8n7Su6NNyjllo/MscZ4Rgp2QVBdUtgfPyXsmiDZho5wexpsC05evf5hRwryk3HS9uT0JJ4eEbS1tfmdD+iYY8cEVKTC7lOLwI2FjbxtI5YO9wSTtr4KDPJ0Ly11LGSKr2jpoclg/DlN7LHVVlQ+Jk0hjiEbQT2bhz3k7NBB0Hd4q1OtPO4QV7FWFCGTPUe5Mh4HYyWuZUTua2kbG/Oxl87HguvlJ3sNr731WjxLai4rc2WESclJ7FVxbgMdMKeSGV0kNRHzGZwA8WtcOtp+0PmpaNVzupLVEWIoxhZx2ZzynKwQBAEAQBAEAQBAEAQBAEAKAuuLMe9tkjk5XLyQsitmzXyFxzXsLXzbeCho0uzTV+ZPXrdo07W0N3D/ABCyGGWmnp+fTyua8tDyxzXtt2muA/yjTw874qUnKSnF2aM0q6jFwkrosouOyKrn+zgRtpjTRQteQI2aEHMWnMdO4dO5RvDeplvre9yRYv181tLWsVfCnEDKQTxyQc6KeMRvaHlh0vYhwB/ePyUlak52admiOjXULpq6ZrqMdDqBlFyrZZzNnzb3a5uXLb/NvfpssqlapnvysYda9NQtzL5nHzczag0bTXNi5Qn5hy7EZzFa2axPXrv0UPortlzer0J/S1+rL63UqYeJ8tNS0/Kv7PUioz5/f1c7LbLp729z5KR0PWlK+6sRrE2jGNtncmjjQOnq3S0wfT1eTmQ8wgtLAA1zZA3canbu7lr6PaMUnquZt6UnKV1o+RV8TY/7VyWMiEMEDMkUeYuIBtcucRck5R8PVSUqWS7bu2RVq3aWSVkibg/E8MdH7JPRe0M5pl/XOj1sGgdlt+/r1Wk6MnPPGVvZc3hXiqeSUb+0zj42f7fDWOhbkhaY44GHK1jCxzA0Gx/fve2traC1no67NwT35j0p9op20XIx4U4ydQunIiDxNqAXWDHjNld7pv73hewSrh1US12FHE9m3puaeGeKTTRywyxulhmIc4NkdHI14/bbI3XWwuOth43zVoZ2pLRr2mKOIyJp6pkmm4wbHUyzMp3ZH0zqcMdM9xbmLTnL3gkns7AAa+ZOrw7cFFvnfY3WKSm5JcrbkDhzG4qdrmyU5eSQWyxyOinZbcNkaCcpsNNOq3q0nN3T9m6NKNdQVmvqWdTxyXzVkppwPaac04Af7gIyhxOXtnXwWiw1lFX2dzd4u7k7bqxUVuO8yhgo+XbkvkfnzXzZy42y20tm7zspI0rVHO+5FKtemoW2LmfjvPVyTmmBimg5EsJkPaZa1w8NFj6dT5iJYa0FG+qd7krxd55raNWsaKbi2KCpp5qahjjjgDxlzXkk5gIcZJct7gHTQ216Gy2dCUoNSlv97GFiIxmnGOiMcc4qjmphTRUzomtn54e6Z0ji6zgc2Ztz7x69AlOg4yzN30ttYVMQpRypc77k53HkftzK4UZEmRzZBzTZ5LQxpbdvZsB3a3Wnoz7PJm9xv6XHPnUfeV+D8TxMpmU1VSCojikMkVpCwtJuS11gczSST69dLbzotyzQdrkcMRFQyzjexsl41e81zpIgXVjGM0dYRBgLW2Fjm0I7tj3p6Mlls/0+8z6U3mutyux3HfaYaWLl5PZozHfNfPfLrawy+7trut6dLJKTvuR1a2eMY22KVTEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQE2hwqWYF0bMwBsdQNd+p8VWrYujReWbs/BgxrsOkhtzG5c17ag7WvsfELNDE0q1+zd7eIIisAIAgCAIAgCAIAgCAIAgCAIAgCAIDKOMuIa0Ek7Ablaykoq8nZG0YuTslqSarDZYxd7CB36EetjooaWKo1XaErv76ktTDVaavJERWCAIAgCAIAgCAIAgCAIAgCAID1jSSAASSbADck7ABYbUVd7BanTw4BAwCGeXJVSC7QPdj/da/pd3/AB3nz8+KYmpJ1sPC9KO/WXVruX9+6wqcVo9znq2kfC90cgs5u/d5g9Qu3Qrwr01Upu6ZBJWdi0w+kbCwTz3sf1cfV57yO789wNKvWlWn2NH2y6fv9+DYxxyv50UDi5pf9rmA/ZuRlBHkFnBYfsatRJO3q2fXTX3mCmXSAQBAEAQBAEAQBAEAQBAEAQBAEB02FYNDLC1xzZje5B6gkbbLhYrH16NZxVreB2MPg6NSkpO9y3oMNjh9wandx1cfX8FzsRi6tf8AW9OnIvUcPTor1V7SU5oIsRcHcHY+arptO6Jmk1ZlU/h2AuvZwH7oOn0v810FxTEKNtPG2pSfD6LlfXwOaxinbHM5jL5RbfyBP1XcwdSdSipz3f1ORiqcadVxjsQlaK4QBAEAQBAEAQBAEAQGTGEkAAkk2AG5J2AC1lJRV27IHSNa3D23dZ9Y4aDdsAPU97vztvwW58VnljdUE99nNr/x+99rCtTXec/K2R5L3Bzi43LiCbk9brtRnSppQTSS5XWhhYevP1lBv2MtqXGGOaBUM5jo9Y3dT/lefvPd8aNTBTjK+HeVS3XTvX3+0TbMoofamvmlc7MCQALZQAAQACPFc/HY6XDZRo0YqzV9b3vfuZ6XgfBaGPpOdSUlaVtLdF1TKeriDXlo2Ft/K67GAxEsRh41ZKzd9vFo5PFsHDB4udCDbStvvqk/maVcOcEAQBAEAQBAEAQBAEAQBAEAQBAdHwlV6uiPXtN+jh9D6FcTi9HRVV4P5HW4ZV3pvxOkJXDOueoDXUTBjXPOzQSfRb04OpNQW7NZzUIuT5Hz6eUvcXHdxJPrqvYwgoRUVsjy05ucnJ8zBbmpZcOYf7RUxxHZxN/IAn7lR4livRcNOr0t72kWsFRVasoPYrnNIJBFiNCO4jcK6mmrrYrSTTszxZMBAEAQBAEAQBAetcQQQSCNQRuCOoWGk1ZhF3PwzWkGV8JIcC8uL2EkWvc9q65MOMcPg1RjNK2lrS8LbWL/APDcU1my+9fUsI/7vF5D6FeS4n/O1fH6H0vgX8nS/wBKMsE4L9pgE/tGS7nDLy77OI3zj6LvcQ/EHodbsezvZLXNbddLM8BQ4V6QnPPa7fK/PxMMPpuU2ojvfJI9t7WvlsL26LmcZr9u6NW1s0E7dL6nqfwxT7KnUhe9pteSRz2JfrHen0C9Lwb+Sh7f+TPL/iT/AKnV/wBv/GJFXUOGEBnC0FzQdiQDqBpf946DzOgWHsZirs6uqwOBxIDTES6G3aN2NfI9jnSMeXWOjQCH5TdpuAbKqqsl37/D75XLsqMHytsaKXAIs7M3MIL4g9hLQYQ7luLZzdpGbO5oIsewdL9kbOrK2nf7d9jWNCN9e72eJHqcDjEcz2yF2QNLSLZHghhuL7AlxADi13Z2JzNblVXdKxrKjFRbRQKwVQgCAIAgCAIAgCAIDZTzFjg9u4Nwo6lONSDhLZm9ObpyUlyO4pq1srA5vXp3HqCvJ1qEqM3CR6WlVjVgpRN8kmihJDnOJcTzfZNOg1d59B9/wXd4Xhcv50vZ9TkcQxN/yo+36HPrsnKPQOttPz+BWH0Mpczv/wDp/iVLzDE2DlzOBs8uLs4GpbcgZdr2Ght5Lx34iwmL7PtZVM0E9rWtfS/f0u9VfxPQ8KxGHz5IwtJ873uUfF+JUssr+VBZ1yDKH2DiNzktYjx3K6vBsJjKNGPbVNLfptey6Zt/ZsijxCvh6k5ZIa9b/I5td05YQBAEAQBAEAQAoD7ZVf3Vv/pP+wL5T/8Ad/3/APke6h/gP/T8j5/F/d4vIfQrpcU/navieg4F/J0v9KOu4G/uDf45P95Uf4h/nX4R+B5fhn+F7X8Wcwffq/8A3yqxj/8ACw3/AG4nX/D/AP8AN/3H8jlsS/WO9PoF6zg38lD2/wDJnkvxJ/1Or/t/4xIq6hwwgCAWQCyAWQBAEAQBAEAQBAEAQBAWeF4K+bte6z949f4R181QxWPp0NN5dPqXMNgp1dXojoWYHGAAHO08vwXnqteVSbm+Z3KdJU4qK5Hv6FZ+875KPOSWImIcOB2sbiHdztj6jZdLCcSdJKE1p3blDE4FVG5xepzNRA5ji17SHDoV3qdSNSOaDujizpyg8slZnS0tJRnD5HGZ4fzWX7AzBwDsrQ3NYggvN8w26WsuHVrY5cShFQWXK/8ANpa6u720adtLP33OpCnhvRJNyd7rlrfWytfx5lDhdaYJmyt1LSSPUEfeuvisOsRRlSlzOfQrdjVU1yIgVkgCAIAgCAIAgCAID0LDMxdnctHcRVJblM78trWvpba3wXN/hOEzZ8ive97cy9/Ea1rX0IgxB9g3MbDYdyknw3Dzk5yim3zsTUuM4ulFRhNpLvN1NjdRG3JHO9jLk5QdNdStK3C8NWlnqRTfeRU+I1aatHQ0e3y9o8x13EudruTuStpcMoTSUop2VlpsuhJR4viKN+zdru7t16mh7yTcm5VqhQjRjljt0KmKxU8RPtJ/q5vryMVMVggCAIAgCAIAgCAIAgCAIAgCAvMAwfmfaSDsDYfvf0+q5WPx/Zfl0/1den7nSwWDz+vPb4/sdYBZeebudsLACAICJieHMmbZ2hHuu6j+ngrOGxU6Erx25rqQYjDxrRs/M4urhfEXRO01BI6G1w1w9HO+K9PSnTrJVY/2va69yPP1YTpN05GVBhs05tFE5/fYaDzOw9VriMZQwyvWmo+O/luzNHDVa3+HFst4uDak7mJng54J/wDoCuPU/E2Ag9G34L62L8OC4mS1svb9Lm0cEVB2lgP87vvYtI/inBS3Ul4pf+xs+CYhc17/AKEOr4Tq4wXcnO0bmMtf8mkn5LoUOM4Kt+maXjp79veVavDcRT3jfw+7lKQumUmraM8WTAQBAEAQBAEAQBALoAgCAIAgCAIAgCAIAgCAIAgCAICfg2H85+vuDV33AeapY3FdhTut3t9fYW8Jh+2nrstzt42AAACwHReWbbd2ehSSVkZLBkICFh9cZC4FtreK2lGxhMmrUyEBDxLDGz5Q7Qhw162v2h6j5qxQxk8MpSj0fnbRkFbDRr2Uup1c9MGNa2MAQWGUN92/W/j5/ivGYqVWb7WTzX3Z2qUYxWVK1uRX1t9A3MP4QT8SNlWpW52JJdxCY4jbMe/KXA+twp2k9/fY0RbNedLXv07/AEsq0bp6EjtbUouP8HMjGzsjBlYLzFth2f3nAbkEbj6L2v4c4m41HQqy0drdL327r+V+968Di+DzQVSC1W/h+x88XuDzIQBAEAQBAEBbYPhhnY9oytDSx75n2DIWAPBzu6XLhYDUlugPTnV8aqdbLa9l8bM7uG4P2uEVaU7ZnorXbtdaaltWz+whjaeGOSGRt3VEjQ9tW39pjf8ADYDuwEPBAJOgXPr4ypKaa0XI7PDuD0Oykp6y59V9+RIwV0LWzzUzHvaYjnpy882nPSRpaRzYm3Pa3FxmHVbVcZ2sY5o6ojocIlQqyippKWzauvPk+7n1ZxzYyTlaC49ABcnyAXbhUUoKfJo8piMPKjWlRe8W15GCkIAgCAIAgCAIAgCAIAgCAIC74Swg1Mr22uGxSG/QOc0sZr33dcfwrk8XxywlGMr6uUfJNN+5W9pf4fhnXm13P3qyL/C6IRMDOu7v4uv4ei4+KxDr1HPly8Dr4eiqMFH7uTlWJwgKTEK55eWMJABy6bk7b+akjFWuzVs1igmZq2/8rtf6rOZMWZZYVJI5pL++wuLHTe60klyMomrUyegrDSaswnYsqGpI1uRfe23qF5fGUZYeplg3Y6dKaqRuybnv+w0+Qt/tsqvaSkrWT9hLlS5mcNO3/DAN/H8VHKc+nuMpLqWFI1jR7va7gNVcw7jl9da9P2Ial76bGutiJDja2YBlu4HT71vO8ZdpbaxiNmsp8MqIsjnMOpa4t+Bt9y+t0qiqQjNc0n56ng6kMk3F8ma1IaBAEBshZffYKjjsS6NP1d2dvgXDo4zEfmK8IrXvvstPP2E+rwt8WXmxPZnbmbmBGZveLrkvH4lby9y+h6yHBOGTvkgnbpKX1Nlbg/JbBLMRyZcpPKcHShrmtktldo12Vw30+C39MxKSblv3L6FKfDOHTlOnSp+tHR3crX8z6DheHU09HG+eDLAGteyBj5CAX7OkLXNMj7aZj6ADRGu1d3zKHbTwjcYvbTa/lfkeSYTDTxPNPA2SB7nF8MrpMuZltdXOynX9Y0XHUECx1dJLRmVjq0pKalqudkvgeOo6RlS5tPT8ueJ0xacrwPsg46PE1/2TrbW+w1W/o6SzGj4lWqNwk37igdXf228NNHHUPvG7tEROzhrhIG7xuvmDtbEC+lyo5156U1t0OjhuHUqlGWJraP8AqV27LR3T05ePec1jdGY5Xght7hxyuzNs8B4LXDcWcCruDxc+17Kp7O4ocT4VQ9CjisMvF66ra9ru1n05XK1dc8oLoAgCAIAgCAIAgCAID1rrEHQ279vVYaurGU7O59K4BxrmNex0McbW6gxtyh1hd2Yd4FjdeF/EOA7OcZxnKTfKTvbpZ9O49RwrEupFpxSS6aG2srua4nI1viB2vU9VHh8P2MbZm/h5FidTM9jQ4W3/ADfVWE77EZ4gKXEMOfmL2C4JvpuCpIyVrM1aMI8Vkbo4X8xY/n0WcqYuW1JVNkFx6g7hRtWM3N6wZCAsaGnzM7Pv3PZ6kf5e/wAlwOIpzrWvsloXsO0oEu1veBB/PQrjuNnZltO+xnFa43+H9VrJKxlE6mdZw+Hx0W2Gko1FYxUV4slVvuG512A6XOgXTrJZWm/v76laG+h8OxulkinkbK3K/MSQDcdo3Baeo13X0/AVaVXDwdJ3SVvLTz+9jxeLpzhWlnVm3fzIKuFYIAgPpXC/CAbAydk8Bmfcse85ooiNCWNOkkjT1PZaRsSLrgYturUcvI9fgK0cLQVFp2esrbtvlfkktNN9epNpOEpRnbNWQVETyXvY95vn25kchJLJP8w0I0IIVZUpc2X58So6SpQcZLmrbdGuaOY4z4fqo3NgDn1ETP1dm9pgADQ2QAaEAAXuQRYi2w1cZLTdFmli8NOLqWUZN69/eTsNxivhgZB+iy9rWsbd3MF8mx7NvqpIzlHZFGthsNVk5Opu7m+bHsQewxjDMgIfr9obF2hPa36aXCSqTfIxTwOFvbtdPYaXYnihc53scQe7Ndwp3ZjnBDtc/W5+K17araxMuHcPTv2i819CpfRVzpedyJBJcG7WaAgAaA36Dqonncs1jqUp4OFHsc6ce99TVWYTWSOdJJBISQMxLLCzQGjQAAABoHon5mbNrc3VbBKn2SlHLZq1+T3KCpgcxxa4WI6eeoXqKNTtIKR8yxdBUK0qad0no+q5FhgWItgExOfM5jQ3I7K4kSMcRmyusMrTfTXbqlSDlb75GKNRQvcnMrKNxu6KNtwwuAbJbtF5mbHlOj9YwwmzQAde+PLUXN+72fuSZ6T5L73/AGJLjQse0PZG6zP2TKGXLYDaVwa67v7x7oNrt2sMuF2rWny7/wBjd9jF8tvp+5po5qaQ8kRxhrnUouQ7NblvbUO5h0DmveHa5WkM8lmSmvWv1+OhiMqcvVt0+GpQ172GR5jFo8xyDX3Ro29+pFifElTxvZX3Ks2nJ22I62NAgCAIAgAWAd5hUXJY1o3ykHzcCHfUrx+LqekVHJ7X09mx6jD0+ypqJLpi0HtAkdwNvuVeak16rs/MmVr6k/FnsL+wDs3W+h0FtPK3VVcHGpGHrvr8ev7ElVxb0IKuERTR4s5riHt0vtsW+HipMi5GtxX4ix7LBpv0JA0+aRi0w2Z4DGbOd0NgPG17/VJhF9S0jn3IsGjdx2Cp18VTo/q36E0Kcp7EgUcY3c53lZo+dyuVPi8v8sV8foWVhVzZ42ohaQLG3fm29bKnWqzryzzXyJoRUFZMs4a5jho51v5Xj4EBRqolo7rxsza19dPgbGsPvDK5t9wALHxHRRVKcsuaNmvvkbKSvZkiAgG5tb0WtB5Z3na3sMz1WhJkYXgANs24PmuhJdpG0VoV16ruz5J/1AmDqx1iCWta026EE6fAhe7/AA1TnDBest5Nrw0V/ceY4zKMsRpySObXoDkhAEB32HVUUmGwQcwB7RVBwtsXvu0eZFj6rg43EwpYi0+47GHf5CR7w5hcTJrvcD9nYX0BN2/gonjaE/VjLXyN6aalqdBjNPT1UklXG6KaN8cWV2WN1iHFh7LgSRZttRZSRqxXqp6rkbyhmk/A8xWmjnDBHUuzC5eGZ2FpOliWuF9Q74KKM4ybSexKQP0G7X+0S6//ACS/Lt6bLcyZwYE7Mz+0S6Fv/kltvfUZ9fXppsgPK+CF7SWVnZbLLG7lue2z25LtOVwJIuFHUqwpq8mYuV9TTsLX/wBpeS6ORoaTJlu5jmi7S7La5GvqoHjaNr39xjMj58Iy3sncaHzGi9TTkpQTXNI8/P8AUwtzUIAgCAIAgCAIAgLjh/h2Wrcclmxj3pHe6PAd58FyuJcWoYFWlrJ7RW/i+i+0mXsHgKmJd1ouv3udlRcKUcViTJM4EG97C47gLC3qV47E/ibF1LpNRXcr+93+R6CjwihCzs2+9/Quf0bTOFg58Z7zq313+oVOjxJveV33q30Lc8P0RWYhhr4CM2rTs4bH8F1aVdVNNmVpQcSPdTGgQGuWna/3mg+f4rKbQKjCaQFzs7Dpa1wbf1W8n0NUjqMGpGySBp2ttte3RUMZVnCCybt2J6MU3qWTJmkGN4yagiw0aRplcB9V57MpZlUvfqX7WtlMZKVxBDQD0uO0PgNVCqMr3Wvgbua8CsfQyNNg31GYW8xdSXvun5GtuhMpKWQC1ifMW+Z3Uco5nojZOyLBlK6Njid3Wb5b/E6reVOUKbbNVJSkbaeK5Db/AJCq0acas8tyWUnGNybUmzbBx0te29huupUdoZYvYrR1ldnwvGWgVEwAsBLJYdwzHRfT+HTlPB0pS3cI/BHisYksRNL+p/Ehq6VggCAl0uIOjGVoba99Qfx8FzsTwyjiJ55t37n+xYp4mcI5VY3/AKZk7m/A/ioP4JhusvNfQ39Mn0RuHE9UGhjJcjR0a1uupdrcHq5x9SrVLh9GmtLvx/aweNqcjVheOzU5e5hDi/3s9zrme+4F7DWQ7eCysBRTbS3MrHVO4sf+9anuj/0n/wDSz6FT7zPp1TuPW8b1QINotNfdPT+ZPQqfePTqncVhxqTXssF3PeQAbZnkucd+pKqz4PQnLM3LzX0Mem1O4fpmTub8D+K1/gmG6y819DHpk+iIEshc4uO5N9F1KVNU4KC2SsVpSzNtmCkNQgCAIAgCAIAgJOHUbppWRN3e4N8r7n0Fz6KvisRHD0ZVpbRV/wBva9CahRdapGmuZ9ZdC2JjYIxaNgAt3nck9/f5r5JisTUrVJVJu8nv99Pke6o0o04KMVoiLVThgI1zEaW6KvTg5O/Ikk7E2nYGMbzbl9vdvr5uPRbyhFO7MKTaM/bzYCzGt7jcj6hZ7bla4yGb+TJpJEGn99mlvMf8q9Q4gk7bfAhnQ9pUYlQGF1r5mnVrhsQu3Rrqppz+9SlOGXXkQ1OaBAbqUnNp8ultb/JUeI01Ki23a2pNh5Wn4ls2fOO2A49597w1GvxXm5VpP9Wv31OioLkHKB25G5vjjI1utHPkZsWUEOU3zXPcF0KFDspZm79xBOeZWsRayd5dl0FrXGnn1UeIqTbys2pxS1RlECSAoKKnKaS+RvKyRIxOQtieQANCPiuvLZK2jaXmyqtz4G95JJJuSbknck6klfVYxUUoxVkjwkpOTbe54tjAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQHR/8AT9oNdH32fbzyn+q4f4izPASS6x+KOnwi3pKv0fwPoUrbOdfe5+q+XVL5mmezjsa6amBl5h1DG3t1v0+/4KWlL1bGklqeG7iSeqilK5ukV00rpDZrdGm//N1PGMYK8nuRtuWxKpZ3uuHNsR6KGcIrZm8W3uWUTBJE+M7gZmnxH5+ZV7BYhQ1fL4dCGtTuc4vTnNCAn4S4NJfa5bawPUHRy5XE6jiox5b+Nv7lrDRTuyeI2OJcw2v+y7S3kdrfBcSpGE36rt3P6lyLa3PTE4dPgQfoVE6Ul/dG2ZG2Iutq13y+8rRwn195tdFnSF2UDLbxv3/nxXRw6nGmope0rVLOVyse+8hJ3ufLTTu8FQrSvJuRYgrJWJdJ7w6brOEa7RWMVf0nuMEcp3XTfp+fJdN2bjbXVfH72K65+DPg4X1lngggCAIAgCAIAgCAtqbAZXxcyxGl2gjQ/wA2wv0+5c2pxSlCt2b9r6ffMlVJtXKpzSDYixGhB3HmuinfVER4sgIAgCAIAgCAIAgCAm4LiBp545hrkcCR3jZw9QSFVxmH9IoSpdV7917yfDVuxqxn0+HM+v1mV4bMw5o5AHAjbX8/VfJ8dh5U6jbXj3M9zQqKUdDXh9PcTG+7Wm38N1HSTnBrojaWjRqVUlKswtcc0clj3HS3r3K0pSStJEVk9mbsPnJuHG9uq0qwSs0bQZZ4ee0T0DSsU0JHN517OKskjkPcyD1kEildquVxWmnSU+afxLOGk81izgbcaa+S844ts6CaNnLPUEeiw4yW6M3RMjj2HkFHGDlJXMt2RZE9nK0k6WuOnS912b+plj0sVOd2cpifEMNPLkke5ptewDjpq0aj+Fb4bguMxlN1KKVr23tqiOtj6FCSjUetr7EM8fUzDcNlfvsAB8XH7l08J+FccpqVSUUvFv5W95Trcaw1rRTfsOd4j44mqmmNrRFEdwDdzh3F2mngAF6nBcDoYeSnN5pLa+yfW3XxZxcTxSpVTjHRPzOVXbOYEAQBAEAQG2lizOAyud3hu9utvFR1ZqEW7peO1zaMbux0lJwa+UZ4pGvZuWnsyjwsRlv439FzHxenFNTTv3Wa+JYjQV9Xp7zq8L4Uo3sBbH2mkE8xzs1x0c3+i5M8fi1N9pNZGtGtNOq53XNPbboztRwOGqUvy079fryLWWEWtYW2t0t3W7lzpxtry6nKqUpU5ZZLU+ecV0Te1Iwe64gkHdl7Nce89L/gu9wfFtvsZPlp9CCrHS5zK9AVwgCAu2YM1wjY3mcx7I5C+14mteSCHWF22A965Fw4WFrqDtWrvl7yz2KaS1v15Eim4XvI1r5mlpkjacnvFknLtINCLfbM11F7i98odh19NF9/aMrDa6vn9/EpK6m5b8uYOBbG8OAIuJGNkbodjZwU0ZXVyCpDLKxHWxoEAQBAEB0nC3Fb6T7N7eZATcsvq09Sz8NvJcTinBqeM9eOkvc/H6/HS3SwPEZYf1Zax968Pod3h3E9C4h7Jwzo5kmmh6a/iV4+rwXFYapeNKT8PWXu18z0MOIUKsf1r26fEl1kAGrCHRuF2kaix7/zquHiKDpzdtvh3HQpzzIp6uhAsWg76+XqsU6re4lDoSIKcDRoNz8StHJyZskkQuLsVFLAYmu+3lFtN2N2J8OoHifBej/D/C3ia6qSXqRd33vkvm+7xRyeKY1Uabin6z2+v07/AAPnQrZR/wCV/wDqd+K+gvDUXvBeSPK9vV/qfmwa+X/Ff/qd+KejUf6F5Iz6RV/qfmyx4dxXlzh0j3FpBbckkC/Ug9NPmuXxrh7xGElCjFZrp20V7ci7w7GdnXTqydtj6PSSMc242PVpuD5f8r5jWhknlmnFr72Z7GElKN4u6N+nRx+Y+ijduTNvYSW7DW6hl3s2RZcwNYHOc1jQ0EuJsALbknQLuUIznGMY9FtqylUlGLbZ8Y4wxBk9S50Zu0DKHfvWJNx4ar33A8HUwmFyVN227dL/ADPK8UxEK9e8NkkikXZOcEAQBAEAQBAEBLw7Qudexa0kHu1AuR1Guq53E5NUNObJqCvI6DCK2SKUSw6u0zxk+8PDxtsR0+XlZu2jLPM6apxpl2zNa5j7tEjCDZzSbE7WzDfQ6rND819hPaXufJr59UW8JVlTqq2z3J2MVt2dkEX38R3W6qhg63aQnG21n56P77jp8UoWpqT3ucniwBp5eujTffXMPn4nXwC63Cm1io+34Hn6i9VnGL2ZSCAsMCbEZhzxmiDZXOF7E5Y3uABuNcwFvGyjqZsvq76fEloqLl622p0tNhsR5MAq7ct0he9k+VpdmhLZIw67RlbM/YC+Rxuq7nLWVt+7x+haUI6Rvt3+H1IrAx0El6qQSD2aXtS3L3uizyEdwjuNNXHlBoNyANndSWnXl3/P5jTK/W6c+778iNjmHQRskyPdI9phAcZWusw85ugDRmFo4fLO3pq7anOTavpvy8P3I6tOCTtq9OZzqsFQIAgCAIAgCAv+HeLZ6TsttJF1jft/Kdx9PBcnHcIoYpuf6ZdVz8Vz9z7y/heI1KCy7rp08DpP+/KZ2rqaQHuaRb6j6LzNX8J13K8JQt7V7kn8Tsx45Stqpe5/Mh1/HxsW08AYT+2+xPoBp8SVcwn4UjF3rzv3R09+/uXiV6/HLq1KPtf0/c42pqHSOL3uLnONyTuV6ylShSgoU1ZLkjhVKkqknKTu2alIaBAEBvpqySM3jkcz+EkX87bqCvhqNdWqwUvFJktKvUpfok14MsWcT1Y/8x9WsP1auZP8PcNk7ukvY5L4MuLi2LX+f3L6GTuK6w6c8+jWD6NWI/hzhkXdUl7XJ/FmXxfGP/P7l9CurcQlm/WyvfbbM4kDyB0HoupRw1GgrUoqPgrFKpXqVP1ybIynIggCAIAgCAIAgCA30c2V2uxFvLY3+X/OyqYyg61LKt9yWlNRldlxh8faAsCNx2XEDr2S0i3fYm3cbWXkcRFxdmXHZlhXPY1naLQTa17a6g3GpPrmIUmAo1J1oyjFtJq/mbU5xhOLk+aM8Y4ojyhsQznS5IIb6dSVJwvgFaGd4h2UraJ3ejv4HQ4pxSjVgoU9dd+Rz9ZjUkjSx2WxtewN9CCNXEncBegw/DKFCanG911f9jgyrSkrFauiRBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQG+nq3M2t4XANvK6qV8DRryUpr5X8SSNSUVZGqR5cSXEkncnUlWYxjBZYqyNG77mK2MBAEAQBAEAQBAEAQH//2Q==" class="img-fluid" alt="project image">
+
+                                 <div class="project-info">
+                                      <small>Master asset allocation to reduce risks and increase long-term returns</small>
+
+                                      <h3>
+                                           <a href="project-detail.html">
+                                                <span>Portfolio Diversification</span>
+                                           </a>
+                                      </h3>
+                                 </div>
+                            </div>
+
+                            <div class="item project-wrapper" data-aos="fade-up">
+                                 <img src="data:image/jpeg;base64,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" class="img-fluid" alt="project image">
+
+                                 <div class="project-info">
+                                      <small>Understand market trends and behavioral finance for smarter decisions.</small>
+
+                                      <h3>
+                                           <a href="project-detail.html">
+                                                <span>Stock Market Psychology</span>
+                                           </a>
+                                      </h3>
+                                 </div>
+                            </div>
+
+                            <div class="item project-wrapper" data-aos="fade-up">
+                                 <img src="https://miro.medium.com/v2/resize:fit:752/1*XMV7OS0DBN5v5UQE6w02WQ.png" class="img-fluid" alt="project image">
+
+                                 <div class="project-info">
+                                      <small>Develop strategies to maintain a high return-to-risk ratio.</small>
+
+                                      <h3>
+                                           <a href="">
+                                                <span> Risk & Reward Optimization</span>
+                                           </a>
+                                      </h3>
+                                 </div>
+                            </div>
+
+                            <div class="item project-wrapper" data-aos="fade-up">
+                                 <img src="data:image/jpeg;base64,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" class="img-fluid" alt="project image">
+
+                                 <div class="project-info">
+                                      <small>Wealth Creation Blueprint</small>
+
+                                      <h3>
+                                           <a href="project-detail.html">
+                                                <span>Build a sustainable and profitable investment portfolio.
+
+                                                </span>
+                                               
+                                           </a>
+                                      </h3>
+                                 </div>
+                            </div>
+                       </div>
+                  </div>
+
+             </div>
+        </div>
+   </section>
+
+
+
+     <!-- TESTIMONIAL -->
+     <!-- <section class="testimonial section-padding">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <div class="contact-image" data-aos="fade-up">
+
+                          <img src="images/female-avatar.png" class="img-fluid" alt="website">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                      <h4 class="my-5 pt-3" data-aos="fade-up" data-aos-delay="100">Client Testimonials</h4>
+
+                      <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
+
+                      <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Lorem ipsum Sed eiusmod esse aliqua sed incididunt aliqua incididunt mollit id et sit proident dolor nulla sed commodo.</h2>
+
+                      <p data-aos="fade-up" data-aos-delay="400">
+                        <strong>Mary Zoe</strong>
+
+                        <span class="mx-1">/</span>
+
+                        <small>Digital Agency (CEO)</small>
+                      </p>
+                    </div>
+
+               </div>
+          </div>
+     </section> -->
+
+     <!-- FOOTER SECTION -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo1.png" alt="Intliri Academy" height="60" style="background-color: white; border-radius: 10px;">  <!-- Add your logo image -->
+                </a>
+                <h2>Intliri Academy</h2>
+                <p>2025 | All Rights Reserved</p>
+            </div>
+
+            <div class="footer-contact">
+                <p><i class="fas fa-map-marker-alt"></i> 18, Ayur Mall, Amravati - 444 605</p>
+                <p><i class="fas fa-phone-alt"></i> Call Us: <a href="tel:+918483829386">+91 84838 29386</a></p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/918483829386" target="_blank">+91 84838 29386</a></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@intliri.com">contact@intliri.com</a></p>
+                <p><i class="far fa-clock"></i> Working Hours: 9 AM - 6 PM (Mon - Sat)</p>
+            </div>
+
+            <div class="footer-program">
+                <h3>Our Flagship Program for Traders</h3>
+                <p>📈 Learn Institutional Trading Strategies & Smart Money Concepts</p>
+                <p>🚀 Become a Profitable Trader in just 3 Months</p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="#courses">My Courses</a> |
+            <a href="https://www.youtube.com/@intliriacademy">Intliri YouTube Channel</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="term.html">Terms of Use</a> |
+            <a href="refund.html">Refund Policy</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-bottom">
+          
+            <p>copyright &copy; 2025 Intliri Academy | Designed & Developed by <a href="https://www.linkedin.com/in/shrutika-tayade-79a342287/" target="_blank">Shrutika</a></p>
+            <p>All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper(".testimonial-slider", {
+    slidesPerView: 2,  // Display 2 testimonials at a time
+    spaceBetween: 30,   // Spacing between slides
+    loop: true,         // Infinite loop
+    autoplay: {
+        delay: 3000,    // Auto-slide every 3 seconds
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        768: { slidesPerView: 2 },
+        480: { slidesPerView: 1 } // Show only 1 on smaller screens
+    }
+});
+</script>
+
+     <!-- AOS Animation Library -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+     AOS.init({
+         duration: 800,
+         easing: "ease-in-out",
+         once: true
+     });
+ </script>
+ 
+<!-- Bootstrap JS (Required for Auto-Sliding) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
